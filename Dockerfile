@@ -1,7 +1,7 @@
 # FROM python:3.11-alpine
 FROM python
 
-WORKDIR /app
+WORKDIR /api
 COPY requirements.txt ./
 
 RUN pip install --upgrade pip
