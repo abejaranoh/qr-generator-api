@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from .routes.create_qr import qr
 from fastapi.middleware.cors import CORSMiddleware
+from mangum import Mangum
 
 app = FastAPI()
 
@@ -22,9 +23,4 @@ app.add_middleware(
 
 app.include_router(qr)
 
-
-
-
-
-
-
+handler = Mangum(app=app)
