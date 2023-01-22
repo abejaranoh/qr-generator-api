@@ -1,5 +1,5 @@
 # FROM python:3.11-alpine
-FROM python
+FROM python:3.9
 
 WORKDIR /api
 COPY requirements.txt ./
