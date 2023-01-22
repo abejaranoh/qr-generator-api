@@ -1,3 +1,10 @@
+# convert px to pts
+def to_pts(px):
+    resolution = 72
+    box_size = (px * resolution) / 72
+    
+    return box_size
+
 # convert hex to rgb
 def to_rgb(color):
     #remove #
