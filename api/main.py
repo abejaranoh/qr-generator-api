@@ -7,7 +7,8 @@ from decouple import config
 # app = FastAPI()
 
 # isProduction = config("IS_PRODUCTION")
-origins = ["*"]
+# origins = ["*"]
+origins = ["*://localhost:*/*"]
 
 # if isProduction == True:
     # app = FastAPI(docs_url=None, redoc_url=None)
